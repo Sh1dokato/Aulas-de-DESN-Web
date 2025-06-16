@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Tabelas</title>
+</head>
+<body>
+    <center><h1>ALINHAMENTO DE TABELA E CÉLULAS</h1></center>
+    <table border="1" align="center"> <!-- aqui conseguimos aumentar a borda e alinhar ele no centro-->
+        <td> Primeira célula </td>
+        <td> Segunda célula </td>
+        <td> Terceira célula </td>
+        <tr>
+        <td align="center">Centro</td><!-- aqui serve para alinhar para o centro-->
+        <td align="left">Esquerda</td><!-- aqui serve para alinhar para a esquerda-->
+        <td align="right">Direita</td><!-- aqui serve para alinhar para a direita-->
+        </tr>
+    </table>
+<br>
+<br>
+<center><h1>Uso do cellspacing</h1></center>
+    <table border="1" width="80%" cellspacing="30" align="left"> <!-- o cellspacing serve para aumentar a borda pois ele esta em  table border -->
+        <tr>
+        <td width="33%" align="center"> Coluna 1 </td>
+        <td width="33%" align="center"> Coluna 2 </td>
+        <td width="34%" align="center"> Coluna 3 </td>
+        </tr>
+</table>
+
+<br>
+<br>
+
+<center><h1>Uso do cellpadding</h1></center>
+<table border="1" width="80%" cellpadding="24" align="center"> <!-- o cellpadding serve pra aumentar o tamanho de tudo -->
+    <tr>
+    <td width="25%" align="center"> Aluno </td>
+    <td width="30%" align="center"> Professor </td>
+    <td width="45%" align="center"> Tec. Desn </td>
+    </tr>
+
+    </table>
+
+    <br>
+<br>
+
+<center><h1>Uso do ROWSPAN</h1></center>
+<table border="3" width="90%" cellpadding="7" align="center">
+    <tr>
+    <td width="16%" rowspan="3"> 3 linhas </td> <!-- rowspan serve para mesclar as linhas, aqui esta mesclando 3-->
+    <td width="16%"  > L1 Coluna 2 </td>
+    <td width="16%"  > L1 Coluna 3 </td>
+    <td width="17%"  > L1 Coluna 4 </td>
+    <td width="17%"  > L1 Coluna 5 </td>
+    </tr>
+
+    <tr>
+        <td width="16%"  > L2 Coluna 2 </td>
+        <td width="16%"  > L2 Coluna 3 </td>
+        <td width="17%"  > L2 Coluna 4 </td>
+        <td width="17%"  > L2 Coluna 5 </td>
+    </tr>
+
+    <tr>
+        <td width="16%"  > L3 Coluna 2 </td>
+        <td width="16%"  > L3 Coluna 3 </td>
+        <td width="17%"  > L3 Coluna 4 </td>
+        <td width="17%"  > L3 Coluna 5 </td>
+    </tr>
+    </table>
+
+
+    <br>
+    <br>
+    
+    <center><h1>Uso do Colspan</h1></center>
+    <table border="3" width="90%" cellpadding="7" align="center"> 
+        <tr>
+        <td width="16%" colspan="3"> Celula com 3 colunas </td> <!-- colspan serve para mesclar as colunas, e aqui esta mesclando  3-->
+        <td width="16%"  > L1 Coluna 4 </td>
+        <td width="16%"  > L1 Coluna 5 </td>
+
+        </tr>
+    
+        <tr>
+            <td width="16%" bgcolor="green" > L2 Coluna 2 </td>
+            <td width="16%" bgcolor="blue" > L2 Coluna 2 </td>
+            <td width="17%" bgcolor="yellow" > L2 Coluna 3 </td>
+            <td width="24%" colspan="3" bgcolor="red"> Célula com 2 colunas </td>
+        </tr>
+        </table>
+</body>
+</html>
